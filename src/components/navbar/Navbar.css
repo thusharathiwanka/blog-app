@@ -1,0 +1,65 @@
+header {
+	position: sticky;
+	top: 0;
+}
+
+nav {
+	max-width: 1440px;
+	padding: 0 1.5rem;
+	margin: 0 auto;
+	min-height: 10vh;
+}
+
+nav a,
+.search {
+	color: #444444;
+	transition: color 0.3s ease-in-out;
+}
+
+nav a:hover,
+.search:hover {
+	color: #989898;
+}
+
+nav,
+.social-links ul,
+.nav-links ul {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.social-links,
+.nav-links {
+	flex: 3;
+}
+
+.nav-links {
+	flex: 6;
+}
+
+.social-links li,
+.nav-links li,
+.search {
+	margin: 0 1rem;
+}
+
+.social-links li:first-child {
+	margin-left: 0;
+}
+
+.search {
+	margin-right: 0;
+	cursor: pointer;
+}
+
+nav ul {
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	font-family: "josefin sans", sans-serif;
+}
+
+nav .social-links ul,
+.search {
+	font-size: 1.4rem;
+}
