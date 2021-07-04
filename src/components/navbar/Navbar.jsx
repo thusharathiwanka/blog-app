@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import {
 	SiFacebook,
@@ -11,9 +11,24 @@ import { RiSearchLine } from "react-icons/ri";
 import "./Navbar.css";
 
 const Navbar = () => {
+	const [show, setShow] = useState(false);
+
+	useEffect(() => {
+		window.addEventListener("scroll", () => {
+			if (window.scrollY > 100) {
+				setShow(true);
+			} else {
+				setShow(false);
+			}
+		});
+		return () => {
+			window.removeEventListener("scroll");
+		};
+	}, []);
+
 	return (
-		<header>
-			<nav>
+		<header className={show && "blur"}>
+			<nav className={show && "blur min-height"}>
 				<div className="social-links">
 					<ul>
 						<li>

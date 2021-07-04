@@ -1,0 +1,10 @@
+.posts-container h1 {
+	font-family: "lobster", serif;
+	font-size: 4.8rem;
+	font-weight: 500;
+	line-height: 5.5rem;
+	color: #444;
+	text-align: center;
+	margin-top: 2rem;
+	padding: 6rem 2rem;
+}

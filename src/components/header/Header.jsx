@@ -11,14 +11,14 @@ const Header = () => {
 			<h2>with Everyone</h2>
 			<Link className="cta">Start Writing</Link>
 			<div className="scroll-indicator">
-				<Link to="">
+				<a href="#posts">
 					<div className="mouse">
 						<span></span>
 					</div>
 					<div className="arrow">
 						<span></span>
 					</div>
-				</Link>
+				</a>
 			</div>
 			<img src={headerImg} alt="header-img" />
 		</div>

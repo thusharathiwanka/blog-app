@@ -1,24 +1,18 @@
 header {
 	position: sticky;
 	top: 0;
-}
-
-nav {
-	max-width: 1440px;
-	padding: 0 1.5rem;
-	margin: 0 auto;
-	min-height: 15vh;
+	background: transparent;
 }
 
 nav a,
 .search {
 	color: #ffffff;
-	transition: color 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
 }
 
 nav a:hover,
 .search:hover {
-	color: #989898;
+	opacity: 0.8;
 }
 
 nav,
@@ -27,6 +21,14 @@ nav,
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+}
+
+nav {
+	max-width: 1440px;
+	padding: 0 1.5rem;
+	margin: 0 auto;
+	min-height: 10vh;
+	align-items: flex-end;
 }
 
 .social-links,
@@ -51,6 +53,11 @@ nav,
 .search {
 	margin-right: 0;
 	cursor: pointer;
+}
+
+.blur {
+	backdrop-filter: blur(50px);
+	align-items: center;
 }
 
 nav ul {
