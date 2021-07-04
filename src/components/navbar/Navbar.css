@@ -2,6 +2,8 @@ header {
 	position: sticky;
 	top: 0;
 	background: transparent;
+	transition: all 1s ease-in-out;
+	z-index: 100;
 }
 
 nav a,
@@ -29,6 +31,7 @@ nav {
 	margin: 0 auto;
 	min-height: 10vh;
 	align-items: flex-end;
+	transition: all 1s ease-in-out;
 }
 
 .social-links,
@@ -56,7 +59,7 @@ nav {
 }
 
 .blur {
-	backdrop-filter: blur(50px);
+	backdrop-filter: blur(10px);
 	align-items: center;
 }
 
