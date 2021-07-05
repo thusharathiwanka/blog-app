@@ -4,7 +4,9 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/home/Home";
 import Blog from "./pages/blog/Blog";
-import Write from "./pages/write/Write";
+import Write from "./components/write/Write";
+import Settings from "./pages/settings/Settings";
+import Login from "./pages/login/Login";
 
 function App() {
 	return (
@@ -15,10 +17,16 @@ function App() {
 					<Route path="/" exact>
 						<Home />
 					</Route>
+					<Route path="/settings" exact>
+						<Settings />
+					</Route>
 					<Route path="/write" exact>
 						<Write />
 					</Route>
-					<Route path="/:id" exact>
+					<Route path="/auth/login" exact>
+						<Login />
+					</Route>
+					<Route path="/posts/:id" exact>
 						<Blog />
 					</Route>
 				</Switch>

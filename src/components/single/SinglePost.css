@@ -28,7 +28,7 @@
 	text-transform: uppercase;
 	color: #bcbcbc;
 	font-size: 0.9rem;
-	letter-spacing: 3px;
+	letter-spacing: 1.5px;
 }
 
 .post-content {
@@ -45,6 +45,7 @@
 	font-size: 1rem;
 	color: #444;
 	margin-right: 1rem;
+	letter-spacing: 3px;
 }
 
 .post-actions {

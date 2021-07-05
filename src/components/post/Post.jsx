@@ -18,7 +18,7 @@ const Post = () => {
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid eum
 					odit nobis eius iste consequatur corporis culpa atque, quo eveniet?
 				</p>
-				<Link>Read more</Link>
+				<Link to="/posts/1">Read more</Link>
 			</div>
 		</div>
 	);

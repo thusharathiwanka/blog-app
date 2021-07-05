@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect, useContext } from "react";
 import { BsPlusCircleFill } from "react-icons/bs";
 
-import "./WriteForm.css";
+import "./Write.css";
+import { NavbarStyles } from "../../context/NavbarContext";
 
 const WriteForm = () => {
+	const { setPath } = useContext(NavbarStyles);
+
+	useEffect(() => {
+		setPath(window.location.pathname);
+	}, [setPath]);
+
 	return (
 		<div className="create-post-container">
 			<img
