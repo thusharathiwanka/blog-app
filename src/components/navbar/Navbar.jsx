@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import {
 	SiFacebook,
@@ -8,10 +8,12 @@ import {
 } from "react-icons/si";
 import { RiSearchLine } from "react-icons/ri";
 
+import { NavbarStyles } from "../../context/NavbarContext";
 import "./Navbar.css";
 
 const Navbar = () => {
 	const [show, setShow] = useState(false);
+	const { path, setPath } = useContext(NavbarStyles);
 
 	useEffect(() => {
 		window.addEventListener("scroll", () => {
@@ -21,6 +23,9 @@ const Navbar = () => {
 				setShow(false);
 			}
 		});
+
+		setPath(window.location.pathname);
+
 		return () => {
 			window.removeEventListener("scroll");
 		};
@@ -28,7 +33,8 @@ const Navbar = () => {
 
 	return (
 		<header
-			className={window.location.pathname !== "/" || show ? "pop bg-white" : ""}
+			className={path !== "/" || show ? "pop bg-white" : ""}
+			onClick={() => setPath(window.location.pathname)}
 		>
 			<nav className={show && "blur min-height"}>
 				<div className="social-links">

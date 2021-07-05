@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/home/Home";
-import SinglePost from "./components/single/SinglePost";
+import Blog from "./pages/blog/Blog";
+import Write from "./pages/write/Write";
 
 function App() {
 	return (
@@ -14,8 +15,11 @@ function App() {
 					<Route path="/" exact>
 						<Home />
 					</Route>
+					<Route path="/write" exact>
+						<Write />
+					</Route>
 					<Route path="/:id" exact>
-						<SinglePost />
+						<Blog />
 					</Route>
 				</Switch>
 			</div>

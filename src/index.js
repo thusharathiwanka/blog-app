@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
+import NavBarContext from "./context/NavbarContext";
 
 ReactDOM.render(
-	<React.StrictMode>
+	<NavBarContext>
 		<App />
-	</React.StrictMode>,
+	</NavBarContext>,
 	document.getElementById("root")
 );

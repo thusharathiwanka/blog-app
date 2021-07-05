@@ -9,7 +9,9 @@ const Header = () => {
 		<div className="header-container">
 			<h1>Spread the Knowledge</h1>
 			<h2>with Everyone</h2>
-			<Link className="cta">Start Writing</Link>
+			<Link className="cta" to="/write">
+				Start Writing
+			</Link>
 			<div className="scroll-indicator">
 				<a href="#posts">
 					<div className="mouse">
