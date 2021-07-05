@@ -3,19 +3,19 @@
 	font-size: 4.8rem;
 	font-weight: 500;
 	line-height: 5.5rem;
-	color: #444;
 	text-align: center;
-	margin-top: 2rem;
-	padding: 6rem 2rem;
+	margin-top: 10rem;
+	padding-top: 2rem;
 }
 
 .posts-section {
 	margin-bottom: 6rem;
+	color: #444;
 }
 
 .posts-container {
 	width: 1440px;
-	margin: 0 auto;
+	margin: 2rem auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
