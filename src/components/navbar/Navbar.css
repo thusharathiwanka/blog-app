@@ -1,15 +1,13 @@
 header {
 	position: sticky;
 	top: 0;
-	background: transparent;
-	transition: all 1s ease-in-out;
+	color: white;
 	z-index: 100;
 }
 
 nav a,
 .search {
 	color: #ffffff;
-	transition: opacity 0.3s ease-in-out;
 }
 
 nav a:hover,
@@ -23,6 +21,7 @@ nav,
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	transition: all 0.5s ease-in-out;
 }
 
 nav {
@@ -30,13 +29,14 @@ nav {
 	padding: 0 1.5rem;
 	margin: 0 auto;
 	min-height: 10vh;
-	align-items: flex-end;
-	transition: all 1s ease-in-out;
+	align-items: center;
+	transition: all 0.5s ease-in-out;
 }
 
 .social-links,
 .nav-links {
 	flex: 3;
+	transition: all 0.5s ease-in-out;
 }
 
 .nav-links {
@@ -49,6 +49,18 @@ nav {
 	margin: 0 1rem;
 }
 
+.pop .nav-links a,
+.pop .social-links a,
+.pop .search,
+.pop {
+	color: #444;
+	transition: all 0.5s ease-in-out;
+}
+
+.bg-white {
+	background-color: white;
+}
+
 .social-links li:first-child {
 	margin-left: 0;
 }
@@ -56,11 +68,6 @@ nav {
 .search {
 	margin-right: 0;
 	cursor: pointer;
-}
-
-.blur {
-	backdrop-filter: blur(10px);
-	align-items: center;
 }
 
 nav ul {

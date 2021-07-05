@@ -7,7 +7,7 @@ const Post = () => {
 	return (
 		<div className="card-container">
 			<img
-				src="https://images.pexels.com/photos/931007/pexels-photo-931007.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+				src="https://images.pexels.com/photos/2776479/pexels-photo-2776479.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
 				alt="post-img"
 			/>
 

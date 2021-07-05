@@ -27,7 +27,9 @@ const Navbar = () => {
 	}, []);
 
 	return (
-		<header className={show && "blur"}>
+		<header
+			className={window.location.pathname !== "/" || show ? "pop bg-white" : ""}
+		>
 			<nav className={show && "blur min-height"}>
 				<div className="social-links">
 					<ul>
