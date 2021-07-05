@@ -6,7 +6,7 @@ import Home from "./pages/home/Home";
 import Blog from "./pages/blog/Blog";
 import Write from "./components/write/Write";
 import Settings from "./pages/settings/Settings";
-import Login from "./pages/login/Login";
+import UserForm from "./pages/userForm/UserForm";
 
 function App() {
 	return (
@@ -24,7 +24,10 @@ function App() {
 						<Write />
 					</Route>
 					<Route path="/auth/login" exact>
-						<Login />
+						<UserForm title="Login" />
+					</Route>
+					<Route path="/auth/register" exact>
+						<UserForm title="Register" />
 					</Route>
 					<Route path="/posts/:id" exact>
 						<Blog />

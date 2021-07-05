@@ -9,6 +9,7 @@
 .login-section h1 {
 	color: white;
 	font-size: 3.5rem;
+	margin-top: -3rem;
 }
 
 .login-section form {
@@ -39,7 +40,7 @@
 
 .login-section input:focus {
 	outline: none;
-	border: 1px solid #538590;
+	border: 2px solid #538590;
 }
 
 .login-section label {
