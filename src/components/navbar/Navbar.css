@@ -70,8 +70,13 @@ nav {
 	cursor: pointer;
 }
 
+.social-links li a,
+.search {
+	font-size: 1.2rem;
+}
+
 nav ul {
-	font-size: 1.1rem;
+	font-size: 1rem;
 	text-transform: uppercase;
 	font-family: "josefin sans", sans-serif;
 }

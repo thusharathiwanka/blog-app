@@ -29,7 +29,7 @@ const Navbar = () => {
 		return () => {
 			window.removeEventListener("scroll");
 		};
-	}, []);
+	}, [setPath]);
 
 	return (
 		<header
